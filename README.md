@@ -97,7 +97,7 @@ Brainfork は、Brainfuck の拡張であり、並列処理とロック機構を
 )        ; unlock cell0
 ```
 
-### 例 3: デッドロックを意図的に発生させ得るコード（説明用）
+### 例 3: デッドロックを意図的に発生させ得るコード
 
 ```
 {              ; Thread A
@@ -105,7 +105,7 @@ Brainfork は、Brainfuck の拡張であり、並列処理とロック機構を
     ...
   ) )          ; unlock cell1, then cell0
 |
-  > ( < (      ; lock cell1 first, then cell0  ← 逆順取得
+  > ( < (      ; lock cell1 first, then cell0
     ...
   ) )          ; unlock cell0, then cell1
 }
@@ -116,7 +116,7 @@ Brainfork は、Brainfuck の拡張であり、並列処理とロック機構を
 
 ---
 
-## 8. まとめ（ポイント再掲）
+## 8. 総括
 
 - **追加記号**: `{`, `}`, `|`, `(`, `)`, `~`, `;`
 - **コメント**: `;` から行末まで無視。
