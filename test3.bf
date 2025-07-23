@@ -7,6 +7,7 @@
 
 {  ; 2スレッド
   (          ; lock cell0
+    ~ ~      ; 0.2s 待つ（タイミング調整）
     > (      ; lock cell1
       <<     ; dp=cell0
       +      ; cell0++
