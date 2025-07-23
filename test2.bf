@@ -2,8 +2,7 @@
 
 [-]        ; cell0 = 0
 >[-]       ; cell1 = 0
->[-]       ; cell2 = 0 (dummy)
-< <        ; dp = cell0
+<        ; dp = cell0
 
 {
   (              ; Thread-A: lock cell0
